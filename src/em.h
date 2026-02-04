@@ -1,6 +1,6 @@
 // Simple namespace and EM tools for EM modeling
 
-// Author:     Liangyu Xie
+// Author:     Liangyu Xie,Renjie Li,Chaojian Chen
 // Institute:  Central South University (CSU)            
 // Email:      8211221219@csu.edu.cn
 // Date:       2026/02/04
@@ -8,7 +8,7 @@
 // GitHub Page: https://github.com/212445151AL
 
 //  ************************** Changelog **************************
-// 2021/07/22
+// 2026/02/04
 // (1) Add function "double tand(double deg)”
 
 #ifndef _EM_H
