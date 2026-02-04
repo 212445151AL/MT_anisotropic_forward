@@ -1,3 +1,5 @@
+// Piecewise Constant Matrix Coefficient Class, returns different matrix coefficients based on grid cell properties
+
 #ifndef PW_MATRIX_COEFFICIENT_H
 #define PW_MATRIX_COEFFICIENT_H
 
@@ -7,7 +9,7 @@
 using namespace mfem;
 
 /**
- * @brief 分片常数矩阵系数类，根据网格单元属性返回不同的矩阵系数
+ * @brief 
  */
 class PwMatrixCoefficient : public MatrixCoefficient
 {
