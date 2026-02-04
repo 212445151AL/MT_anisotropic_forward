@@ -10,7 +10,7 @@
 // (2013). A goal-oriented adaptive finite-element approach for plane wave 3-D 
 // electromagnetic modelling. Geophysical Journal International, 194, 700-718.
 
-// Author:     Liangyu Xie
+// Author:     Liangyu Xie,Renjie Li,Chaojian Chen
 // Institute:  Central South University (CSU)            
 // Email:      8211221219@csu.edu.cn
 // Date:       2026/02/04
