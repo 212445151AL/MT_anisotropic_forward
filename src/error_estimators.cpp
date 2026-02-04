@@ -10,14 +10,12 @@
 // (2013). A goal-oriented adaptive finite-element approach for plane wave 3-D 
 // electromagnetic modelling. Geophysical Journal International, 194, 700-718.
 
-// Author:     Hongbo Yao
-// Institute:  School of Geosciences and Info-Physics,
-//             Central South University (CSU)
-// Email:      yaohongbo@csu.edu.cn
-// Date:       2021/01/22
+// Author:     Liangyu Xie
+// Institute:  Central South University (CSU)            
+// Email:      8211221219@csu.edu.cn
+// Date:       2026/02/04
 
-// GitHub Page: https://github.com/hongbo-yao
-// Researchgate Page: https://www.researchgate.net/profile/Hongbo_Yao2
+// GitHub Page: https://github.com/212445151AL
 
 #include "error_estimators.h"
 
