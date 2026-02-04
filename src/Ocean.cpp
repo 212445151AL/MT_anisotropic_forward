@@ -1,7 +1,7 @@
 // A three-dimensional MT forward modeling tool for anisotropic media in spherical coordinates
 // tetrahedral Nedelec elements
 
-// Author:     Liangyu Xie
+// Author:     Liangyu Xie,Renjie Li,Chaojian Chen
 // Institute:  Central South University (CSU)            
 // Email:      8211221219@csu.edu.cn
 // Date:       2026/02/04
