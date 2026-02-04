@@ -1,14 +1,12 @@
 // Parallel post-processing. Compute magnetic induction B from 
 // Nedelec electric field E
 
-// Author:     Hongbo Yao
-// Institute:  School of Geosciences and Info-Physics,
-//             Central South University (CSU)
-// Email:      yaohongbo@csu.edu.cn
-// Date:       2021/08/03
+// Author:     Liangyu Xie,Renjie Li,Chaojian Chen
+// Institute:  Central South University (CSU)            
+// Email:      8211221219@csu.edu.cn
+// Date:       2026/02/04
 
-// GitHub Page: https://github.com/hongbo-yao
-// Researchgate Page: https://www.researchgate.net/profile/Hongbo_Yao2
+// GitHub Page: https://github.com/212445151AL
 
 #ifndef _POST_H
 #define _POST_H
