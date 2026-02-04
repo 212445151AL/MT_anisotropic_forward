@@ -1,5 +1,12 @@
 // Piecewise Constant Matrix Coefficient Class, returns different matrix coefficients based on grid cell properties
 
+// Author:     Liangyu Xie,Renjie Li,Chaojian Chen
+// Institute:  Central South University (CSU)            
+// Email:      8211221219@csu.edu.cn
+// Date:       2026/02/04
+
+// GitHub Page: https://github.com/212445151AL
+
 #ifndef PW_MATRIX_COEFFICIENT_H
 #define PW_MATRIX_COEFFICIENT_H
 
@@ -14,50 +21,48 @@ using namespace mfem;
 class PwMatrixCoefficient : public MatrixCoefficient
 {
 private:
-   std::map<int, MatrixCoefficient*> attr_to_coef;  // 属性到矩阵系数的映射
-   DenseMatrix default_mat;                         // 默认矩阵
+   std::map<int, MatrixCoefficient*> attr_to_coef;  // Mapping of Attributes to Matrix Coefficients
+   DenseMatrix default_mat;                       
 
 public:
-   /// @brief 构造函数
-   /// @param height 矩阵高度
-   /// @param width 矩阵宽度
+   /// @brief 
+   /// @param height 
+   /// @param width 
    PwMatrixCoefficient(int height, int width)
       : MatrixCoefficient(height, width), default_mat(height, width)
    {
-      // 设置默认矩阵为单位矩阵
+      // Set the default matrix to the identity matrix
       default_mat = 0.0;
       for (int i = 0; i < height && i < width; i++) {
          default_mat(i, i) = 1.0;
       }
    }
 
-   /// @brief 添加属性对应的矩阵系数
-   /// @param attr 网格属性
-   /// @param coef 矩阵系数
+   /// @brief 
+   /// @param attr 
+   /// @param coef 
    void AddCoefficient(int attr, MatrixCoefficient* coef)
    {
       attr_to_coef[attr] = coef;
    }
 
-   /// @brief 设置默认矩阵
-   /// @param mat 默认矩阵
+   /// @brief 
+   /// @param mat 
    void SetDefaultMatrix(const DenseMatrix& mat)
    {
       default_mat = mat;
    }
 
-   /// @brief 重写 Eval 方法
+   /// @brief
    virtual void Eval(DenseMatrix &M, ElementTransformation &T,
                     const IntegrationPoint &ip)
    {
       int attr = T.Attribute;
       
-      // 查找对应的矩阵系数
       auto it = attr_to_coef.find(attr);
       if (it != attr_to_coef.end()) {
          it->second->Eval(M, T, ip);
       } else {
-         // 使用默认矩阵
          M = default_mat;
       }
    }
