@@ -1,13 +1,11 @@
 // A class for handering input parameters
 
-// Author:     Hongbo Yao
-// Institute:  School of Geosciences and Info-Physics,
-//             Central South University (CSU)
-// Email:      yaohongbo@csu.edu.cn
-// Date:       2021/08/05
+// Author:     Liangyu Xie
+// Institute:  Central South University (CSU)            
+// Email:      8211221219@csu.edu.cn
+// Date:       2026/02/04
 
-// GitHub Page: https://github.com/hongbo-yao
-// Researchgate Page: https://www.researchgate.net/profile/Hongbo_Yao2
+// GitHub Page: https://github.com/212445151AL
 
 #ifndef _PARAM_HANDLER_H
 #define _PARAM_HANDLER_H
